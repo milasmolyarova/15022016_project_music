@@ -1,0 +1,85 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.list_music {
+		height: 380px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.wrapper {		
+    	padding-top: 20px;    
+	}	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.col_audio__img {
+		padding-top: 20px;
+	}
+	.col_log__img___icon {
+		left: 90px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.wrapper {		
+    	padding-top: 10px;    
+	}
+	.col_log__img___icon {
+			display: none;
+		}
+	.col_log__img___icon {
+		padding-left: 0; 
+	}	
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {	
+	.wrapper {		
+    	padding-top: 20px;    
+	}
+	.col_log__img___icon {
+		padding-left: 5px; 
+	}    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.col_log__img___icon {
+		left: 65px;
+	}	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.col_log__img___icon {
+		left: 90px;
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.wrapper {		
+    	padding-top: 40px;    
+	}
+	.list_music {
+		height: 480px;
+	}
+}

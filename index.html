@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <title>index</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" 
+</head>
+<body>
+    <div class="wrapper">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <form class="col-xs-12 col-sm-4 col-sm-push-8 col-md-4 col-lg-4" action="" class="row">
+                        <div class="col_input_search col-xs-6 col-sm-7 col-md-7 col-lg-7">
+                            <div class="input_search">
+                                <img class="input_search_img" src="images/search_icon.png" alt=""> 
+                                <input type="text" placeholder="пошук" />
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-5 col-md-5 col-lg-5">                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="registrationLabel">
+                                <div class="modal-dialog modal-md" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title" id="registrationLabel">Don't have an iD? Please <a href="">register</a>.</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label class="control-label col-xs-4 col-sm-3" for="yourMail">Your Email:</label>
+                                                    <div class="col-xs-8 col-sm-9">
+                                                        <input type="email" class="form-control" id="yourMail" placeholder="Email" pattern="[\x1F-\xBF]*" onkeyup="checkParams()">
+                                                        <span id="valid"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label col-xs-4 col-sm-3" for="yourPassword">Your Password:</label>
+                                                    <div class="col-xs-8 col-sm-9">
+                                                        <input type="password" class="form-control" id="yourPassword" placeholder="Password" pattern="[0-9]{5,10}" onkeyup="checkParams()">
+                                                        <span id="valid"></span>
+                                                        <a href="#">Forgot your password?</a>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-sm-offset-3 col-xs-12 col-sm-9">
+                                                        <label class="checkbox-inline">
+                                                            <input type="checkbox">Remember me
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div id="registrationError"></div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="col-xs-offset-3 col-xs-9">
+                                                <input type="submit" class="btn btn-info" id="registrationBtn" value="Sign in" data-toggle="modal" data-target="#registrationOk" onclick="registration()" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                
+                            <!-- registration ok-->                                                   
+                             <div class="modal fade" tabindex="-1" role="dialog" id="registrationOk">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h4 class="modal-title">Lorem ipsum!</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat sem ipsum, ut faucibus nulla. Nullam mattis volutpat dolor, eu porta magna facilisis ut. In ultricies, purus sed pellentesque mollis, nibh tortor semper elit, eget rutrum purus nulla id quam.</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-info" onclick="registrationOk()">Ok</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col_log">
+                                <a href="#" type="button" class="col_log__link" data-toggle="modal" data-target="#registration">Log In</a>
+                                <a class="col_log__link">Увійти як автор<img class="col_log__img___icon" src="images/log_in_icon.png" alt=""></a>
+                            </div>
+                        </div>
+                    </form>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="col_audio">
+                        <img class="col_audio__img" src="images/man.png" alt="man">
+                        <hr>
+                        <span class="col_audio__text">instrumental/classic/piano</span>
+                        <img class="col_audio__img" src="images/audio.png" alt="audio">
+                        <ul class="sprite_menu list-unstyled">
+                            <li class="sprite_menu__voice"><a href=""></a></li>
+                            <li class="sprite_menu__facebook"><a href="https://www.facebook.com/"></a></li>
+                            <li class="sprite_menu__vk"><a href="https://vk.com"></a></li>
+                            <li class="sprite_menu__skype"><a href="https://www.skype.com"></a></li>
+                            <li class="sprite_menu__russhit"><a href="https://www.ok.ru"></a></li>
+                            <li class="sprite_menu__twitter"><a href="https://twitter.com"></a></li>
+                            <li class="sprite_menu__google"><a href="https://www.google.com"></a></li>
+                            <li class="sprite_menu__linkedin"><a href="https://www.linkedin.com"></a></li>
+                        </ul>
+                        <div class="audio_star">
+                            <div id="reviewStars-input">
+                                <input id="star-4" type="radio" name="reviewStars"/>
+                                <label title="gorgeous" for="star-4"></label>
+                                <input id="star-3" type="radio" name="reviewStars"/>
+                                <label title="good" for="star-3"></label>
+
+                                <input id="star-2" type="radio" name="reviewStars"/>
+                                <label title="regular" for="star-2"></label>
+
+                                <input id="star-1" type="radio" name="reviewStars"/>
+                                <label title="poor" for="star-1"></label>
+
+                                <input id="star-0" type="radio" name="reviewStars"/>
+                                <label title="bad" for="star-0"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-sm-pull-8 col-md-4 col-lg-4">
+                        <div class="col_music_one col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div id="nextAr1" class="arrow next_music"></div>
+                            <div id="title1" class="list_title">my</div>
+                            <ul id="listMusic1" class="list_music list-unstyled">
+                                <li><div class="list_music__item1">Sting</div></li>
+                                <li><div class="list_music__item1">Florence and the machines</div></li>
+                                <li><div class="list_music__item1">Leonard Cohen</div></li>
+                                <li><div class="list_music__item1">Gorillaz</div></li>
+                                <li><div class="list_music__item1">Muse</div></li>
+                                <li><div class="list_music__item1">Nirvana</div></li>
+                                <li><div class="list_music__item1">Друга ріка</div></li>
+                                <li><div class="list_music__item1">Bebe</div></li>
+                                <li><div class="list_music__item1">Ella Fitzgerald</div></li>
+                                <li><div class="list_music__item1">Nina Simone</div></li>
+                                <li><div class="list_music__item1">Frank Sinatra</div></li>
+                                <li><div class="list_music__item1">Бумбокс</div></li>
+                                <li><div class="list_music__item1">Jamala</div></li>
+                                <li><div class="list_music__item1">Pianoboy</div></li>
+                                <li><div class="list_music__item1">Red Hot Chili Peppers</div></li>
+                                <li><div class="list_music__item1">Amy Macdonald</div></li>
+                                <li><div class="list_music__item1">DakhaBrakha</div></li>
+                                <li><div class="list_music__item1">Metallica</div></li>
+                                <li><div class="list_music__item1">Океан Ельзи</div></li>
+                                <li><div class="list_music__item1">Каста</div></li>
+                                <li><div class="list_music__item1">Sting</div></li>
+                                <li><div class="list_music__item1">John Newman</div></li>
+                                <li><div class="list_music__item1">R.E.M.</div></li>
+                                <li><div class="list_music__item1">Sting</div></li>
+                                <li><div class="list_music__item1">Крихітка</div></li>
+                                <li><div class="list_music__item1">The Rolling Stones</div></li>
+                                <li><div class="list_music__item1">Coldplay</div></li>
+                                <li><div class="list_music__item1">Buddy Miller</div></li>
+                                <li><div class="list_music__item1">Sting</div></li>
+                                <li><div class="list_music__item1">Mozart</div></li>
+                            </ul>
+                        </div>
+                        <div class="col_music_two col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div id="nextAr2" class="arrow next_music"></div>
+                            <div id="title2" class="list_title">new</div>
+                            <ul id="listMusic2" class="list_music list-unstyled">
+                                <li><div class="list_music__item2">Sting</div></li>
+                                <li><div class="list_music__item2">Florence and the machines</div></li>
+                                <li><div class="list_music__item2">Leonard Cohen</div></li>
+                                <li><div class="list_music__item2">Gorillaz</div></li>
+                                <li><div class="list_music__item2">Muse</div></li>
+                                <li><div class="list_music__item2">Nirvana</div></li>
+                                <li><div class="list_music__item2">Друга ріка</div></li>
+                                <li><div class="list_music__item2">Bebe</div></li>
+                                <li><div class="list_music__item2">Ella Fitzgerald</div></li>
+                                <li><div class="list_music__item2">Nina Simone</div></li>
+                                <li><div class="list_music__item2">Frank Sinatra</div></li>
+                                <li><div class="list_music__item2">Бумбокс</div></li>
+                                <li><div class="list_music__item2">Jamala</div></li>
+                                <li><div class="list_music__item2">Pianoboy</div></li>
+                                <li><div class="list_music__item2">Red Hot Chili Peppers</div></li>
+                                <li><div class="list_music__item2">Amy Macdonald</div></li>
+                                <li><div class="list_music__item2">DakhaBrakha</div></li>
+                                <li><div class="list_music__item2">Metallica</div></li>
+                                <li><div class="list_music__item2">Океан Ельзи</div></li>
+                                <li><div class="list_music__item2">Каста</div></li>
+                                <li><div class="list_music__item2">Sting</div></li>
+                                <li><div class="list_music__item2">John Newman</div></li>
+                                <li><div class="list_music__item2">R.E.M.</div></li>
+                                <li><div class="list_music__item2">Sting</div></li>
+                                <li><div class="list_music__item2">Крихітка</div></li>
+                                <li><div class="list_music__item2">The Rolling Stones</div></li>
+                                <li><div class="list_music__item2">Coldplay</div></li>
+                                <li><div class="list_music__item2">Buddy Miller</div></li>
+                                <li><div class="list_music__item2">Sting</div></li>
+                                <li><div class="list_music__item2">Mozart</div></li>
+                            </ul>
+                        </div>
+                        <div class="col_music_three col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div id="nextAr3" class="arrow next_music"></div>                       
+                            <div id="title3" class="list_title">best</div>
+                            <ul id="listMusic3" class="list_music list-unstyled">
+                                <li><div class="list_music__item3">Sting</div></li>
+                                <li><div class="list_music__item3">Florence and the machines</div></li>
+                                <li><div class="list_music__item3">Leonard Cohen</div></li>
+                                <li><div class="list_music__item3">Gorillaz</div></li>
+                                <li><div class="list_music__item3">Muse</div></li>
+                                <li><div class="list_music__item3">Nirvana</div></li>
+                                <li><div class="list_music__item3">Друга ріка</div></li>
+                                <li><div class="list_music__item3">Bebe</div></li>
+                                <li><div class="list_music__item3">Ella Fitzgerald</div></li>
+                                <li><div class="list_music__item3">Nina Simone</div></li>
+                                <li><div class="list_music__item3">Frank Sinatra</div></li>
+                                <li><div class="list_music__item3">Бумбокс</div></li>
+                                <li><div class="list_music__item3">Jamala</div></li>
+                                <li><div class="list_music__item3">Pianoboy</div></li>
+                                <li><div class="list_music__item3">Red Hot Chili Peppers</div></li>
+                                <li><div class="list_music__item3">Amy Macdonald</div></li>
+                                <li><div class="list_music__item3">DakhaBrakha</div></li>
+                                <li><div class="list_music__item3">Metallica</div></li>
+                                <li><div class="list_music__item3">Океан Ельзи</div></li>
+                                <li><div class="list_music__item3">Каста</div></li>
+                                <li><div class="list_music__item3">Sting</div></li>
+                                <li><div class="list_music__item3">John Newman</div></li>
+                                <li><div class="list_music__item3">R.E.M.</div></li>
+                                <li><div class="list_music__item3">Sting</div></li>
+                                <li><div class="list_music__item3">Крихітка</div></li>
+                                <li><div class="list_music__item3">The Rolling Stones</div></li>
+                                <li><div class="list_music__item3">Coldplay</div></li>
+                                <li><div class="list_music__item3">Buddy Miller</div></li>
+                                <li><div class="list_music__item3">Sting</div></li>
+                                <li><div class="list_music__item3">Mozart</div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer>
+    <div class="container">
+        <div class="slider_container">
+          <div class="navy prev_button"></div>
+          <div class="navy next_button"></div>
+            <div class="carousel">
+                <div class="slide_item">
+                    <div class="slide-title">All</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Pop</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Rock</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Dubstep</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Punk</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Bass</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Lounge</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Classice</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Romanse</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Relax</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Jazz</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Folk</div>
+                </div>
+                <div class="slide_item">
+                    <div class="slide-title">Rock&Roll</div>
+                </div>
+          </div>
+        </div>
+    </div>  
+    </footer>
+    </div>
+    <!--[if lt IE 9]>
+    <script src="libs/html5shiv/es5-shim.min.js"></script>
+    <script src="libs/html5shiv/html5shiv.min.js"></script>
+    <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+    <script src="libs/respond/respond.min.js"></script>
+    <![endif]-->
+    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/forForm.js"></script>
+</body>
+</html>
